@@ -113,7 +113,7 @@ app.post("/components/processor", function(req,res){
     Processor.create(req.body.processor, function(err, processor){
         if(err){
             res.send("something went wrong!");
-        } else {gi
+        } else {
             res.redirect("/components/new");
         }
     });
@@ -187,6 +187,6 @@ app.get("/faq", function(req,res){
     res.render("faq.ejs");
 });
 //server started
-app.listen(3000, function(req,res) {
+app.listen(process.env.PORT,process.env.IP, function(req,res) {
     console.log("streamsets server started.");
 });

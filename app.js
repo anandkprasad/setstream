@@ -6,10 +6,10 @@ var methodOverride = require("method-override");
 
 var app = express();
 
-mongoose.connect('mongodb+mongodb+srv://andy:<password>@setstream-m1prn.mongodb.net/<dbname>?retryWrites=true&w=majority://andy:<password>@setstream-m1prn.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+mongodb+srv://<user>:<password>@setstream-m1prn.mongodb.net/<dbname>?retryWrites=true&w=majority://<user>:<password>@setstream-m1prn.mongodb.net/<dbname>?retryWrites=true&w=majority', {
     auth: {
-      user: "andy",
-      password: "#Anand2016"
+      user: "Enter username here",
+      password: "Enter password here"
     },
     useNewUrlParser:true,
     useUnifiedTopology: true
